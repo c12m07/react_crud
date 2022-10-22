@@ -5,6 +5,13 @@ import Login from "./components/login";
 import LoginService from "./services/loginService";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+//
+//  CREDENCIALES DE INICIO DE SESION
+//
+//  email: ximic4@gmail.com
+//  discordId: 732385630134337610
+//
+
 function App() {
   const [logged, setLogged] = useState(false);
   const [email, setEmail] = useState("");
