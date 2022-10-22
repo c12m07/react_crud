@@ -1,20 +1,7 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #E4F2E7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +9,69 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.LoginContainer form{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  color: #387373;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 1px #2D3E40, 1px 2px 1px #2D3E40, 2px 3px 1px #2D3E40, 3px 4px 1px #2D3E40;
+  transition: all 300ms;
+}
+
+h1:hover{
+  text-shadow: 0px 1px 1px #2D3E40, -1px 2px 1px #2D3E40, -2px 3px 1px #2D3E40, -3px 4px 1px #2D3E40;
+}
+
+.LoginContainer p{
+  color: red;
+  font-weight: bold;
+}
+
+.LoginContainer Button{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 40%;
+  transition: all 300ms;
+}
+
+.LoginContainer Button:hover{
+  width: 60%;
+  color: #93BFB7;
+  background-color: #387373;
+}
+
+.section{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.AddEdit{
+  margin-top: 150px;
+}
+
+.AddEdit form{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.AddEdit Button{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  transition: all 300ms;
+}
+
+.AddEdit Button:hover{
+  width: 200px;
+  color: #93BFB7;
+  background-color: #387373;
 }
